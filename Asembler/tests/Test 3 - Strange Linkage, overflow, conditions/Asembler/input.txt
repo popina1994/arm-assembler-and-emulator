@@ -1,0 +1,139 @@
+.public  main
+.extern printNum
+.text.Print
+
+main:
+
+
+ldcal r0, -1
+ldcal r2, 7
+addal r0, r2
+
+ldcal r12, printNum
+callal r12, 0
+
+
+ldcal r0, 3
+ldcal r2, 4
+subal r0, r2
+
+ldcal r12, printNum
+callal r12, 0
+
+
+
+ldcal r0, 0x80000000
+ldcal r2, 0x80000000
+addals r0, r2
+moval r0, psw
+
+
+ldcal r12, printNum
+callal r12, 0
+
+ldcal r0, 0x7fffffff
+ldcal r2, 0x7fffffff
+addals r0, r2
+moval r0, psw
+
+ldcal r12, printNum
+callal r12, 0
+
+
+ldcal r0, 0x80000000
+ldcal r2, 0xffffffff
+addals r0, r2
+moval r0, psw
+
+ldcal r12, printNum
+callal r12, 0
+
+
+ldcal r0, 5
+ldcal r2, 3
+mulal r0, r2
+
+ldcal r12, printNum
+callal r12, 0
+
+
+ldcal r0, 7
+ldcal r2, 3
+dival r0, r2
+
+ldcal r12, printNum
+callal r12, 0
+
+
+ldcal r0, 0xfe
+ldcal r2, 0x1
+andal r0, r2
+
+ldcal r12, printNum
+callal r12, 0
+
+
+ldcal r0, 0xfe
+ldcal r2, 0x1
+oral r0, r2
+
+ldcal r12, printNum
+callal r12, 0
+
+
+ldcal r0, 0xfe
+notal r0, r0
+
+ldcal r12, printNum
+callal r12, 0
+
+
+ldcal r2, storeAddr
+ldral r2, r0, 0
+
+ldcal r12, printNum
+callal r12, 0
+
+ldcal r2, storeAddr
+ldcal r0, 0xae
+stral r2, r0, 0
+ldral r2, r0, 0
+
+ldcal r12, printNum
+callal r12, 0
+
+
+ldcal r2, storeAddr
+ldcal r0, 0xaf
+outal r0, r2
+inal r0, r2
+
+ldcal r12, printNum
+callal r12, 0
+
+ldcal r0, 0x7fffffff
+ldcal r2, 0x7fffffff
+addals r0, r2
+
+ldcal r12, printNum
+callal r12, 0
+
+
+
+ldcal r12, finish
+callal r12, 0
+
+.text.ExitCode
+finish:
+intal 0x0
+
+
+
+.data.MemTest
+adrRead: .long 0x1000
+adrStaturRead : .long 0x1010
+adrWrite : .long 0x2000
+maskCarry : .long 0x1
+storeAddr : .long 0x5
+
+.end

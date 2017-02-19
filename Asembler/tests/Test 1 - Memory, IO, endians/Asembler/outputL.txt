@@ -1,0 +1,61 @@
+
+.text.Print
+eff00008 eff80000 efd00000 efd80000 
+ea7bc400 ef00e240 ef080001 f5040000 
+efc00054 efc80000 0c600000 ea902800 
+ea946800 ea90a800 efc00000 efc80000 
+ec600000 ea909400 ea945400 ea901400 
+efc00000 efc80000 0c600000 
+.text.2
+e0000000 
+.text.3
+f5040000 0e844000 ee080000 e40c000a 
+e30c000a ee100000 e2102000 e404000a 
+ea902800 ea946800 ea90a800 efc00000 
+efc80000 ec600000 ea909400 ea945400 
+ea901400 ea68c400 e1106000 ed2f0000 
+ee844000 ea684400 ed1f0000 ee844000 
+
+.data.print
+30 00 00 00 39 00 00 00 
+.data.Memory
+00 10 00 00 10 10 00 00 00 20 00 00 
+*******************Symbol table *********************
+            idx           Name        section           type       sectionT           size          value     visibility
+              0    .text.Print    .text.Print        section          .text             92              0          local
+              1       printNum    .text.Print         global        not_sec             -1              0         global
+              2           main    .text.Print         global        not_sec             -1              0         global
+              3        .text.2        .text.2        section          .text              4              0          local
+              4         finish        .text.2          local        not_sec             -1              0          local
+              5        .text.3        .text.3        section          .text             96              0          local
+              6           loop        .text.3          local        not_sec             -1              0          local
+              7      printZero        .text.3          local        not_sec             -1             84          local
+              8    .data.print    .data.print        section          .data              8              0          local
+              9           adr0    .data.print          local        not_sec             -1              0          local
+             10           adr9    .data.print          local        not_sec             -1              4          local
+             11   .data.Memory   .data.Memory        section          .data             12              0          local
+             12        adrRead   .data.Memory          local        not_sec             -1              0          local
+             13  adrStaturRead   .data.Memory          local        not_sec             -1              4          local
+             14       adrWrite   .data.Memory          local        not_sec             -1              8          local
+rel.text.Print
+            offset              type               idx       ref section
+                 0           ldclExt                11      .data.Memory
+                 4           ldchExt                11      .data.Memory
+                 8           ldclExt                 8       .data.print
+                12           ldchExt                 8       .data.print
+                32           ldclExt                 5           .text.3
+                36           ldchExt                 5           .text.3
+                56           ldclExt                 5           .text.3
+                60           ldchExt                 5           .text.3
+                80           ldclExt                 3           .text.2
+                84           ldchExt                 3           .text.2
+rel.text.2
+            offset              type               idx       ref section
+rel.text.3
+            offset              type               idx       ref section
+                44           ldclExt                 5           .text.3
+                48           ldchExt                 5           .text.3
+rel.data.print
+            offset              type               idx       ref section
+rel.data.Memory
+            offset              type               idx       ref section

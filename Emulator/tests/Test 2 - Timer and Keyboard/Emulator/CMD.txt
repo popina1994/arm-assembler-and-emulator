@@ -1,0 +1,1 @@
+./Emulator ld.txt outputL.txt

@@ -1,0 +1,816 @@
+***********************FIRST PASS ********************** 
+In line  1  : .public printNum
+Tokens:
+  0 .public 
+  1 printNum 
+TokenEnd
+In line  2  : 
+Tokens:
+TokenEnd
+In line  3  : .text.PrintNum
+Tokens:
+  0 .text.PrintNum 
+TokenEnd
+In line  4  : 
+Tokens:
+TokenEnd
+In line  5  : printNum:
+Tokens:
+  0 printNum 
+TokenEnd
+In line  6  : 
+Tokens:
+TokenEnd
+In line  7  : ldcal r15, adrWrite
+Tokens:
+  0 ldcal 
+  1 r15 
+  2 adrWrite 
+TokenEnd
+In line  8  : ldral r15, r15, 0
+Tokens:
+  0 ldral 
+  1 r15 
+  2 r15 
+  3 0 
+TokenEnd
+In line  9  : 
+Tokens:
+TokenEnd
+In line 10  : ldcal r13, adr0
+Tokens:
+  0 ldcal 
+  1 r13 
+  2 adr0 
+TokenEnd
+In line 11  : ldral r13, r13, 0
+Tokens:
+  0 ldral 
+  1 r13 
+  2 r13 
+  3 0 
+TokenEnd
+In line 12  : 
+Tokens:
+TokenEnd
+In line 13  : ldcal r11, maskCarry
+Tokens:
+  0 ldcal 
+  1 r11 
+  2 maskCarry 
+TokenEnd
+In line 14  : ldral r11, r11, 0
+Tokens:
+  0 ldral 
+  1 r11 
+  2 r11 
+  3 0 
+TokenEnd
+In line 15  : 
+Tokens:
+TokenEnd
+In line 16  : ldcal r1, 32
+Tokens:
+  0 ldcal 
+  1 r1 
+  2 32 
+TokenEnd
+In line 17  : 
+Tokens:
+TokenEnd
+In line 18  : 
+Tokens:
+TokenEnd
+In line 19  : stral sp, lr, 0, prefixDec
+Tokens:
+  0 stral 
+  1 sp 
+  2 lr 
+  3 0 
+  4 prefixDec 
+TokenEnd
+In line 20  : 
+Tokens:
+TokenEnd
+In line 21  : ldcal r12, loop
+Tokens:
+  0 ldcal 
+  1 r12 
+  2 loop 
+TokenEnd
+In line 22  : callal r12, 0
+Tokens:
+  0 callal 
+  1 r12 
+  2 0 
+TokenEnd
+In line 23  : 
+Tokens:
+TokenEnd
+In line 24  : ldral sp, lr, 0, postfixInc
+Tokens:
+  0 ldral 
+  1 sp 
+  2 lr 
+  3 0 
+  4 postfixInc 
+TokenEnd
+In line 25  : 
+Tokens:
+TokenEnd
+In line 26  : ldcal r0, adrSpace
+Tokens:
+  0 ldcal 
+  1 r0 
+  2 adrSpace 
+TokenEnd
+In line 27  : ldral r0, r0, 0
+Tokens:
+  0 ldral 
+  1 r0 
+  2 r0 
+  3 0 
+TokenEnd
+In line 28  : outal r0, r15
+Tokens:
+  0 outal 
+  1 r0 
+  2 r15 
+TokenEnd
+In line 29  : 
+Tokens:
+TokenEnd
+In line 30  : moval pc, lr
+Tokens:
+  0 moval 
+  1 pc 
+  2 lr 
+TokenEnd
+In line 31  : 
+Tokens:
+TokenEnd
+In line 32  : .text.Loop
+Tokens:
+  0 .text.Loop 
+TokenEnd
+In line 33  : 
+Tokens:
+TokenEnd
+In line 34  : loop:
+Tokens:
+  0 loop 
+TokenEnd
+In line 35  : 
+Tokens:
+TokenEnd
+In line 36  : cmpals r1, 0
+Tokens:
+  0 cmpals 
+  1 r1 
+  2 0 
+TokenEnd
+In line 37  : moveq pc, lr
+Tokens:
+  0 moveq 
+  1 pc 
+  2 lr 
+TokenEnd
+In line 38  : 
+Tokens:
+TokenEnd
+In line 39  : subal r1, 1
+Tokens:
+  0 subal 
+  1 r1 
+  2 1 
+TokenEnd
+In line 40  : shlals r0, r0, 1
+Tokens:
+  0 shlals 
+  1 r0 
+  2 r0 
+  3 1 
+TokenEnd
+In line 41  : 
+Tokens:
+TokenEnd
+In line 42  : stral sp, psw, 0, prefixDec
+Tokens:
+  0 stral 
+  1 sp 
+  2 psw 
+  3 0 
+  4 prefixDec 
+TokenEnd
+In line 43  : ldral sp, r2, 0, postfixInc
+Tokens:
+  0 ldral 
+  1 sp 
+  2 r2 
+  3 0 
+  4 postfixInc 
+TokenEnd
+In line 44  : testals r11, r2
+Tokens:
+  0 testals 
+  1 r11 
+  2 r2 
+TokenEnd
+In line 45  : 
+Tokens:
+TokenEnd
+In line 46  : ldcal r2, 0
+Tokens:
+  0 ldcal 
+  1 r2 
+  2 0 
+TokenEnd
+In line 47  : 
+Tokens:
+TokenEnd
+In line 48  : addal r2, r13 
+Tokens:
+  0 addal 
+  1 r2 
+  2 r13 
+TokenEnd
+In line 49  : addne r2, 1
+Tokens:
+  0 addne 
+  1 r2 
+  2 1 
+TokenEnd
+In line 50  : 
+Tokens:
+TokenEnd
+In line 51  : outal r2, r15
+Tokens:
+  0 outal 
+  1 r2 
+  2 r15 
+TokenEnd
+In line 52  : 
+Tokens:
+TokenEnd
+In line 53  : 
+Tokens:
+TokenEnd
+In line 54  : 
+Tokens:
+TokenEnd
+In line 55  : stral sp, lr, 0, prefixDec
+Tokens:
+  0 stral 
+  1 sp 
+  2 lr 
+  3 0 
+  4 prefixDec 
+TokenEnd
+In line 56  : ldcal r12, loop
+Tokens:
+  0 ldcal 
+  1 r12 
+  2 loop 
+TokenEnd
+In line 57  : callal r12, 0
+Tokens:
+  0 callal 
+  1 r12 
+  2 0 
+TokenEnd
+In line 58  : ldral sp, lr, 0, postfixInc
+Tokens:
+  0 ldral 
+  1 sp 
+  2 lr 
+  3 0 
+  4 postfixInc 
+TokenEnd
+In line 59  : 
+Tokens:
+TokenEnd
+In line 60  : moval pc, lr
+Tokens:
+  0 moval 
+  1 pc 
+  2 lr 
+TokenEnd
+In line 61  : 
+Tokens:
+TokenEnd
+In line 62  : printZero:
+Tokens:
+  0 printZero 
+TokenEnd
+In line 63  : 
+Tokens:
+TokenEnd
+In line 64  : ldral r13, r1, 0
+Tokens:
+  0 ldral 
+  1 r13 
+  2 r1 
+  3 0 
+TokenEnd
+In line 65  : outal r1, r15
+Tokens:
+  0 outal 
+  1 r1 
+  2 r15 
+TokenEnd
+In line 66  : 
+Tokens:
+TokenEnd
+In line 67  : moval pc, lr
+Tokens:
+  0 moval 
+  1 pc 
+  2 lr 
+TokenEnd
+In line 68  : 
+Tokens:
+TokenEnd
+In line 69  : 
+Tokens:
+TokenEnd
+In line 70  : .data.print
+Tokens:
+  0 .data.print 
+TokenEnd
+In line 71  : adr0: .char '0', 0, 0, 0
+Tokens:
+  0 adr0 
+  1 .char 
+  2 '0' 
+  3 0 
+  4 0 
+  5 0 
+TokenEnd
+In line 72  : adr9: .char '9', 0, 0, 0
+Tokens:
+  0 adr9 
+  1 .char 
+  2 '9' 
+  3 0 
+  4 0 
+  5 0 
+TokenEnd
+In line 73  : adrSpace : .char 0x20, 0, 0, 0
+Tokens:
+  0 adrSpace 
+  1 .char 
+  2 0x20 
+  3 0 
+  4 0 
+  5 0 
+TokenEnd
+In line 74  : 
+Tokens:
+TokenEnd
+In line 75  : 
+Tokens:
+TokenEnd
+In line 76  : .data.Memory
+Tokens:
+  0 .data.Memory 
+TokenEnd
+In line 77  : adrRead: .long 0x1000
+Tokens:
+  0 adrRead 
+  1 .long 
+  2 0x1000 
+TokenEnd
+In line 78  : adrStaturRead : .long 0x1010
+Tokens:
+  0 adrStaturRead 
+  1 .long 
+  2 0x1010 
+TokenEnd
+In line 79  : adrWrite : .long 0x2000
+Tokens:
+  0 adrWrite 
+  1 .long 
+  2 0x2000 
+TokenEnd
+In line 80  : maskCarry : .long 0x1
+Tokens:
+  0 maskCarry 
+  1 .long 
+  2 0x1 
+TokenEnd
+In line 81  : 
+Tokens:
+TokenEnd
+In line 82  : .end
+Tokens:
+  0 .end 
+TokenEnd
+***********************FIRST PASS ********************** 
+***********************SECOND PASS ********************** 
+In line  1  : .public printNum
+Tokens:
+  0 .public 
+  1 printNum 
+TokenEnd
+In line  2  : 
+Tokens:
+TokenEnd
+In line  3  : .text.PrintNum
+Tokens:
+  0 .text.PrintNum 
+TokenEnd
+In line  4  : 
+Tokens:
+TokenEnd
+In line  5  : printNum:
+Tokens:
+  0 printNum 
+TokenEnd
+In line  6  : 
+Tokens:
+TokenEnd
+In line  7  : ldcal r15, adrWrite
+Tokens:
+  0 ldcal 
+  1 r15 
+  2 adrWrite 
+TokenEnd
+In line  8  : ldral r15, r15, 0
+Tokens:
+  0 ldral 
+  1 r15 
+  2 r15 
+  3 0 
+TokenEnd
+In line  9  : 
+Tokens:
+TokenEnd
+In line 10  : ldcal r13, adr0
+Tokens:
+  0 ldcal 
+  1 r13 
+  2 adr0 
+TokenEnd
+In line 11  : ldral r13, r13, 0
+Tokens:
+  0 ldral 
+  1 r13 
+  2 r13 
+  3 0 
+TokenEnd
+In line 12  : 
+Tokens:
+TokenEnd
+In line 13  : ldcal r11, maskCarry
+Tokens:
+  0 ldcal 
+  1 r11 
+  2 maskCarry 
+TokenEnd
+In line 14  : ldral r11, r11, 0
+Tokens:
+  0 ldral 
+  1 r11 
+  2 r11 
+  3 0 
+TokenEnd
+In line 15  : 
+Tokens:
+TokenEnd
+In line 16  : ldcal r1, 32
+Tokens:
+  0 ldcal 
+  1 r1 
+  2 32 
+TokenEnd
+In line 17  : 
+Tokens:
+TokenEnd
+In line 18  : 
+Tokens:
+TokenEnd
+In line 19  : stral sp, lr, 0, prefixDec
+Tokens:
+  0 stral 
+  1 sp 
+  2 lr 
+  3 0 
+  4 prefixDec 
+TokenEnd
+In line 20  : 
+Tokens:
+TokenEnd
+In line 21  : ldcal r12, loop
+Tokens:
+  0 ldcal 
+  1 r12 
+  2 loop 
+TokenEnd
+In line 22  : callal r12, 0
+Tokens:
+  0 callal 
+  1 r12 
+  2 0 
+TokenEnd
+In line 23  : 
+Tokens:
+TokenEnd
+In line 24  : ldral sp, lr, 0, postfixInc
+Tokens:
+  0 ldral 
+  1 sp 
+  2 lr 
+  3 0 
+  4 postfixInc 
+TokenEnd
+In line 25  : 
+Tokens:
+TokenEnd
+In line 26  : ldcal r0, adrSpace
+Tokens:
+  0 ldcal 
+  1 r0 
+  2 adrSpace 
+TokenEnd
+In line 27  : ldral r0, r0, 0
+Tokens:
+  0 ldral 
+  1 r0 
+  2 r0 
+  3 0 
+TokenEnd
+In line 28  : outal r0, r15
+Tokens:
+  0 outal 
+  1 r0 
+  2 r15 
+TokenEnd
+In line 29  : 
+Tokens:
+TokenEnd
+In line 30  : moval pc, lr
+Tokens:
+  0 moval 
+  1 pc 
+  2 lr 
+TokenEnd
+In line 31  : 
+Tokens:
+TokenEnd
+In line 32  : .text.Loop
+Tokens:
+  0 .text.Loop 
+TokenEnd
+In line 33  : 
+Tokens:
+TokenEnd
+In line 34  : loop:
+Tokens:
+  0 loop 
+TokenEnd
+In line 35  : 
+Tokens:
+TokenEnd
+In line 36  : cmpals r1, 0
+Tokens:
+  0 cmpals 
+  1 r1 
+  2 0 
+TokenEnd
+In line 37  : moveq pc, lr
+Tokens:
+  0 moveq 
+  1 pc 
+  2 lr 
+TokenEnd
+In line 38  : 
+Tokens:
+TokenEnd
+In line 39  : subal r1, 1
+Tokens:
+  0 subal 
+  1 r1 
+  2 1 
+TokenEnd
+In line 40  : shlals r0, r0, 1
+Tokens:
+  0 shlals 
+  1 r0 
+  2 r0 
+  3 1 
+TokenEnd
+In line 41  : 
+Tokens:
+TokenEnd
+In line 42  : stral sp, psw, 0, prefixDec
+Tokens:
+  0 stral 
+  1 sp 
+  2 psw 
+  3 0 
+  4 prefixDec 
+TokenEnd
+In line 43  : ldral sp, r2, 0, postfixInc
+Tokens:
+  0 ldral 
+  1 sp 
+  2 r2 
+  3 0 
+  4 postfixInc 
+TokenEnd
+In line 44  : testals r11, r2
+Tokens:
+  0 testals 
+  1 r11 
+  2 r2 
+TokenEnd
+In line 45  : 
+Tokens:
+TokenEnd
+In line 46  : ldcal r2, 0
+Tokens:
+  0 ldcal 
+  1 r2 
+  2 0 
+TokenEnd
+In line 47  : 
+Tokens:
+TokenEnd
+In line 48  : addal r2, r13 
+Tokens:
+  0 addal 
+  1 r2 
+  2 r13 
+TokenEnd
+In line 49  : addne r2, 1
+Tokens:
+  0 addne 
+  1 r2 
+  2 1 
+TokenEnd
+In line 50  : 
+Tokens:
+TokenEnd
+In line 51  : outal r2, r15
+Tokens:
+  0 outal 
+  1 r2 
+  2 r15 
+TokenEnd
+In line 52  : 
+Tokens:
+TokenEnd
+In line 53  : 
+Tokens:
+TokenEnd
+In line 54  : 
+Tokens:
+TokenEnd
+In line 55  : stral sp, lr, 0, prefixDec
+Tokens:
+  0 stral 
+  1 sp 
+  2 lr 
+  3 0 
+  4 prefixDec 
+TokenEnd
+In line 56  : ldcal r12, loop
+Tokens:
+  0 ldcal 
+  1 r12 
+  2 loop 
+TokenEnd
+In line 57  : callal r12, 0
+Tokens:
+  0 callal 
+  1 r12 
+  2 0 
+TokenEnd
+In line 58  : ldral sp, lr, 0, postfixInc
+Tokens:
+  0 ldral 
+  1 sp 
+  2 lr 
+  3 0 
+  4 postfixInc 
+TokenEnd
+In line 59  : 
+Tokens:
+TokenEnd
+In line 60  : moval pc, lr
+Tokens:
+  0 moval 
+  1 pc 
+  2 lr 
+TokenEnd
+In line 61  : 
+Tokens:
+TokenEnd
+In line 62  : printZero:
+Tokens:
+  0 printZero 
+TokenEnd
+In line 63  : 
+Tokens:
+TokenEnd
+In line 64  : ldral r13, r1, 0
+Tokens:
+  0 ldral 
+  1 r13 
+  2 r1 
+  3 0 
+TokenEnd
+In line 65  : outal r1, r15
+Tokens:
+  0 outal 
+  1 r1 
+  2 r15 
+TokenEnd
+In line 66  : 
+Tokens:
+TokenEnd
+In line 67  : moval pc, lr
+Tokens:
+  0 moval 
+  1 pc 
+  2 lr 
+TokenEnd
+In line 68  : 
+Tokens:
+TokenEnd
+In line 69  : 
+Tokens:
+TokenEnd
+In line 70  : .data.print
+Tokens:
+  0 .data.print 
+TokenEnd
+In line 71  : adr0: .char '0', 0, 0, 0
+Tokens:
+  0 adr0 
+  1 .char 
+  2 '0' 
+  3 0 
+  4 0 
+  5 0 
+TokenEnd
+In line 72  : adr9: .char '9', 0, 0, 0
+Tokens:
+  0 adr9 
+  1 .char 
+  2 '9' 
+  3 0 
+  4 0 
+  5 0 
+TokenEnd
+In line 73  : adrSpace : .char 0x20, 0, 0, 0
+Tokens:
+  0 adrSpace 
+  1 .char 
+  2 0x20 
+  3 0 
+  4 0 
+  5 0 
+TokenEnd
+In line 74  : 
+Tokens:
+TokenEnd
+In line 75  : 
+Tokens:
+TokenEnd
+In line 76  : .data.Memory
+Tokens:
+  0 .data.Memory 
+TokenEnd
+In line 77  : adrRead: .long 0x1000
+Tokens:
+  0 adrRead 
+  1 .long 
+  2 0x1000 
+TokenEnd
+In line 78  : adrStaturRead : .long 0x1010
+Tokens:
+  0 adrStaturRead 
+  1 .long 
+  2 0x1010 
+TokenEnd
+In line 79  : adrWrite : .long 0x2000
+Tokens:
+  0 adrWrite 
+  1 .long 
+  2 0x2000 
+TokenEnd
+In line 80  : maskCarry : .long 0x1
+Tokens:
+  0 maskCarry 
+  1 .long 
+  2 0x1 
+TokenEnd
+In line 81  : 
+Tokens:
+TokenEnd
+In line 82  : .end
+Tokens:
+  0 .end 
+TokenEnd
+***********************SECOND PASS ********************** 

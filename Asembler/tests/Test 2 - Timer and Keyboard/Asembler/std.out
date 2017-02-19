@@ -1,0 +1,330 @@
+***********************FIRST PASS ********************** 
+In line  1  : .public a,b, c, lab, main
+Tokens:
+  0 .public 
+  1 a 
+  2 b 
+  3 c 
+  4 lab 
+  5 main 
+TokenEnd
+In line  2  : .text.1
+Tokens:
+  0 .text.1 
+TokenEnd
+In line  3  : main:
+Tokens:
+  0 main 
+TokenEnd
+In line  4  : 
+Tokens:
+TokenEnd
+In line  5  : ldcal r7, lab
+Tokens:
+  0 ldcal 
+  1 r7 
+  2 lab 
+TokenEnd
+In line  6  : ldcal r14, 0x2000
+Tokens:
+  0 ldcal 
+  1 r14 
+  2 0x2000 
+TokenEnd
+In line  7  : lab:ldcal r15, 0x1000
+Tokens:
+  0 lab 
+  1 ldcal 
+  2 r15 
+  3 0x1000 
+TokenEnd
+In line  8  : 
+Tokens:
+TokenEnd
+In line  9  : 
+Tokens:
+TokenEnd
+In line 10  : ldcal r3, 0x1010
+Tokens:
+  0 ldcal 
+  1 r3 
+  2 0x1010 
+TokenEnd
+In line 11  : inal r4, r3
+Tokens:
+  0 inal 
+  1 r4 
+  2 r3 
+TokenEnd
+In line 12  : cmpals r4, 0
+Tokens:
+  0 cmpals 
+  1 r4 
+  2 0 
+TokenEnd
+In line 13  : calleq r7,8
+Tokens:
+  0 calleq 
+  1 r7 
+  2 8 
+TokenEnd
+In line 14  : 
+Tokens:
+TokenEnd
+In line 15  : inal r0, r15
+Tokens:
+  0 inal 
+  1 r0 
+  2 r15 
+TokenEnd
+In line 16  : outal r0, r14
+Tokens:
+  0 outal 
+  1 r0 
+  2 r14 
+TokenEnd
+In line 17  : 
+Tokens:
+TokenEnd
+In line 18  : ldcal r13, 0x6B
+Tokens:
+  0 ldcal 
+  1 r13 
+  2 0x6B 
+TokenEnd
+In line 19  : cmpals r0, r13
+Tokens:
+  0 cmpals 
+  1 r0 
+  2 r13 
+TokenEnd
+In line 20  : callne r7, 8
+Tokens:
+  0 callne 
+  1 r7 
+  2 8 
+TokenEnd
+In line 21  : 
+Tokens:
+TokenEnd
+In line 22  : a: intal 0x0
+Tokens:
+  0 a 
+  1 intal 
+  2 0x0 
+TokenEnd
+In line 23  : .data.1
+Tokens:
+  0 .data.1 
+TokenEnd
+In line 24  : .char 1
+Tokens:
+  0 .char 
+  1 1 
+TokenEnd
+In line 25  : .align 1
+Tokens:
+  0 .align 
+  1 1 
+TokenEnd
+In line 26  : b : .long  -1, -1
+Tokens:
+  0 b 
+  1 .long 
+  2 - 
+  3 1 
+  4 , 
+  5 - 
+  6 1 
+TokenEnd
+In line 27  : c:
+Tokens:
+  0 c 
+TokenEnd
+In line 28  : .char 7, 2, 3
+Tokens:
+  0 .char 
+  1 7 
+  2 2 
+  3 3 
+TokenEnd
+In line 29  : .bss.1
+Tokens:
+  0 .bss.1 
+TokenEnd
+In line 30  : d:.skip 1
+Tokens:
+  0 d 
+  1 .skip 
+  2 1 
+TokenEnd
+In line 31  : .end
+Tokens:
+  0 .end 
+TokenEnd
+***********************FIRST PASS ********************** 
+***********************SECOND PASS ********************** 
+In line  1  : .public a,b, c, lab, main
+Tokens:
+  0 .public 
+  1 a 
+  2 b 
+  3 c 
+  4 lab 
+  5 main 
+TokenEnd
+In line  2  : .text.1
+Tokens:
+  0 .text.1 
+TokenEnd
+In line  3  : main:
+Tokens:
+  0 main 
+TokenEnd
+In line  4  : 
+Tokens:
+TokenEnd
+In line  5  : ldcal r7, lab
+Tokens:
+  0 ldcal 
+  1 r7 
+  2 lab 
+TokenEnd
+In line  6  : ldcal r14, 0x2000
+Tokens:
+  0 ldcal 
+  1 r14 
+  2 0x2000 
+TokenEnd
+In line  7  : lab:ldcal r15, 0x1000
+Tokens:
+  0 lab 
+  1 ldcal 
+  2 r15 
+  3 0x1000 
+TokenEnd
+In line  8  : 
+Tokens:
+TokenEnd
+In line  9  : 
+Tokens:
+TokenEnd
+In line 10  : ldcal r3, 0x1010
+Tokens:
+  0 ldcal 
+  1 r3 
+  2 0x1010 
+TokenEnd
+In line 11  : inal r4, r3
+Tokens:
+  0 inal 
+  1 r4 
+  2 r3 
+TokenEnd
+In line 12  : cmpals r4, 0
+Tokens:
+  0 cmpals 
+  1 r4 
+  2 0 
+TokenEnd
+In line 13  : calleq r7,8
+Tokens:
+  0 calleq 
+  1 r7 
+  2 8 
+TokenEnd
+In line 14  : 
+Tokens:
+TokenEnd
+In line 15  : inal r0, r15
+Tokens:
+  0 inal 
+  1 r0 
+  2 r15 
+TokenEnd
+In line 16  : outal r0, r14
+Tokens:
+  0 outal 
+  1 r0 
+  2 r14 
+TokenEnd
+In line 17  : 
+Tokens:
+TokenEnd
+In line 18  : ldcal r13, 0x6B
+Tokens:
+  0 ldcal 
+  1 r13 
+  2 0x6B 
+TokenEnd
+In line 19  : cmpals r0, r13
+Tokens:
+  0 cmpals 
+  1 r0 
+  2 r13 
+TokenEnd
+In line 20  : callne r7, 8
+Tokens:
+  0 callne 
+  1 r7 
+  2 8 
+TokenEnd
+In line 21  : 
+Tokens:
+TokenEnd
+In line 22  : a: intal 0x0
+Tokens:
+  0 a 
+  1 intal 
+  2 0x0 
+TokenEnd
+In line 23  : .data.1
+Tokens:
+  0 .data.1 
+TokenEnd
+In line 24  : .char 1
+Tokens:
+  0 .char 
+  1 1 
+TokenEnd
+In line 25  : .align 1
+Tokens:
+  0 .align 
+  1 1 
+TokenEnd
+In line 26  : b : .long  -1, -1
+Tokens:
+  0 b 
+  1 .long 
+  2 - 
+  3 1 
+  4 , 
+  5 - 
+  6 1 
+TokenEnd
+In line 27  : c:
+Tokens:
+  0 c 
+TokenEnd
+In line 28  : .char 7, 2, 3
+Tokens:
+  0 .char 
+  1 7 
+  2 2 
+  3 3 
+TokenEnd
+In line 29  : .bss.1
+Tokens:
+  0 .bss.1 
+TokenEnd
+In line 30  : d:.skip 1
+Tokens:
+  0 d 
+  1 .skip 
+  2 1 
+TokenEnd
+In line 31  : .end
+Tokens:
+  0 .end 
+TokenEnd
+***********************SECOND PASS ********************** 

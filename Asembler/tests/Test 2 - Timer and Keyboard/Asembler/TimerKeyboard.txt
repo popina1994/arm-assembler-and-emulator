@@ -1,0 +1,31 @@
+.public a,b, c, lab, main
+.text.1
+main:
+
+ldcal r7, lab
+ldcal r14, 0x2000
+lab:ldcal r15, 0x1000
+
+
+ldcal r3, 0x1010
+inal r4, r3
+cmpals r4, 0
+calleq r7,8
+
+inal r0, r15
+outal r0, r14
+
+ldcal r13, 0x6B
+cmpals r0, r13
+callne r7, 8
+
+a: intal 0x0
+.data.1
+.char 1
+.align 1
+b : .long  -1, -1
+c:
+.char 7, 2, 3
+.bss.1
+d:.skip 1
+.end

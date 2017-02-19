@@ -1,0 +1,268 @@
+***********************FIRST PASS ********************** 
+In line  1  : .public g, h, i
+Tokens:
+  0 .public 
+  1 g 
+  2 h 
+  3 i 
+TokenEnd
+In line  2  : .extern d, e, f, main, a
+Tokens:
+  0 .extern 
+  1 d 
+  2 e 
+  3 f 
+  4 main 
+  5 a 
+TokenEnd
+In line  3  : 
+Tokens:
+TokenEnd
+In line  4  : .text.3
+Tokens:
+  0 .text.3 
+TokenEnd
+In line  5  : 
+Tokens:
+TokenEnd
+In line  6  : 
+Tokens:
+TokenEnd
+In line  7  : ldcal r13, main
+Tokens:
+  0 ldcal 
+  1 r13 
+  2 main 
+TokenEnd
+In line  8  : ldchal r12, e
+Tokens:
+  0 ldchal 
+  1 r12 
+  2 e 
+TokenEnd
+In line  9  : ldclal r1, d
+Tokens:
+  0 ldclal 
+  1 r1 
+  2 d 
+TokenEnd
+In line 10  : ldclal r1, g
+Tokens:
+  0 ldclal 
+  1 r1 
+  2 g 
+TokenEnd
+In line 11  : ldcheq r1, h
+Tokens:
+  0 ldcheq 
+  1 r1 
+  2 h 
+TokenEnd
+In line 12  : 
+Tokens:
+TokenEnd
+In line 13  : 
+Tokens:
+TokenEnd
+In line 14  : g: intal 0x0
+Tokens:
+  0 g 
+  1 intal 
+  2 0x0 
+TokenEnd
+In line 15  : 
+Tokens:
+TokenEnd
+In line 16  : .data.3
+Tokens:
+  0 .data.3 
+TokenEnd
+In line 17  : firstChar:
+Tokens:
+  0 firstChar 
+TokenEnd
+In line 18  : .char 1
+Tokens:
+  0 .char 
+  1 1 
+TokenEnd
+In line 19  : .align 1
+Tokens:
+  0 .align 
+  1 1 
+TokenEnd
+In line 20  : 
+Tokens:
+TokenEnd
+In line 21  : firstLong:.long  a , d, e, f
+Tokens:
+  0 firstLong 
+  1 .long 
+  2 a 
+  3 , 
+  4 d 
+  5 , 
+  6 e 
+  7 , 
+  8 f 
+TokenEnd
+In line 22  : h:
+Tokens:
+  0 h 
+TokenEnd
+In line 23  : .char 7, 2, 3
+Tokens:
+  0 .char 
+  1 7 
+  2 2 
+  3 3 
+TokenEnd
+In line 24  : .bss.3
+Tokens:
+  0 .bss.3 
+TokenEnd
+In line 25  : i:.skip 1
+Tokens:
+  0 i 
+  1 .skip 
+  2 1 
+TokenEnd
+In line 26  : .end
+Tokens:
+  0 .end 
+TokenEnd
+***********************FIRST PASS ********************** 
+***********************SECOND PASS ********************** 
+In line  1  : .public g, h, i
+Tokens:
+  0 .public 
+  1 g 
+  2 h 
+  3 i 
+TokenEnd
+In line  2  : .extern d, e, f, main, a
+Tokens:
+  0 .extern 
+  1 d 
+  2 e 
+  3 f 
+  4 main 
+  5 a 
+TokenEnd
+In line  3  : 
+Tokens:
+TokenEnd
+In line  4  : .text.3
+Tokens:
+  0 .text.3 
+TokenEnd
+In line  5  : 
+Tokens:
+TokenEnd
+In line  6  : 
+Tokens:
+TokenEnd
+In line  7  : ldcal r13, main
+Tokens:
+  0 ldcal 
+  1 r13 
+  2 main 
+TokenEnd
+In line  8  : ldchal r12, e
+Tokens:
+  0 ldchal 
+  1 r12 
+  2 e 
+TokenEnd
+In line  9  : ldclal r1, d
+Tokens:
+  0 ldclal 
+  1 r1 
+  2 d 
+TokenEnd
+In line 10  : ldclal r1, g
+Tokens:
+  0 ldclal 
+  1 r1 
+  2 g 
+TokenEnd
+In line 11  : ldcheq r1, h
+Tokens:
+  0 ldcheq 
+  1 r1 
+  2 h 
+TokenEnd
+In line 12  : 
+Tokens:
+TokenEnd
+In line 13  : 
+Tokens:
+TokenEnd
+In line 14  : g: intal 0x0
+Tokens:
+  0 g 
+  1 intal 
+  2 0x0 
+TokenEnd
+In line 15  : 
+Tokens:
+TokenEnd
+In line 16  : .data.3
+Tokens:
+  0 .data.3 
+TokenEnd
+In line 17  : firstChar:
+Tokens:
+  0 firstChar 
+TokenEnd
+In line 18  : .char 1
+Tokens:
+  0 .char 
+  1 1 
+TokenEnd
+In line 19  : .align 1
+Tokens:
+  0 .align 
+  1 1 
+TokenEnd
+In line 20  : 
+Tokens:
+TokenEnd
+In line 21  : firstLong:.long  a , d, e, f
+Tokens:
+  0 firstLong 
+  1 .long 
+  2 a 
+  3 , 
+  4 d 
+  5 , 
+  6 e 
+  7 , 
+  8 f 
+TokenEnd
+In line 22  : h:
+Tokens:
+  0 h 
+TokenEnd
+In line 23  : .char 7, 2, 3
+Tokens:
+  0 .char 
+  1 7 
+  2 2 
+  3 3 
+TokenEnd
+In line 24  : .bss.3
+Tokens:
+  0 .bss.3 
+TokenEnd
+In line 25  : i:.skip 1
+Tokens:
+  0 i 
+  1 .skip 
+  2 1 
+TokenEnd
+In line 26  : .end
+Tokens:
+  0 .end 
+TokenEnd
+***********************SECOND PASS ********************** 

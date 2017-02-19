@@ -1,0 +1,26 @@
+.public d, e, f
+.extern g, h, i, main, a
+
+.text.2
+
+
+ldcal r13, main
+ldchal r12, firstChar
+ldclal r1, firstLong
+ldclal r1, g
+ldcheq r1, h
+
+
+d: intal 0x0
+
+.data.2
+firstChar:
+.char 1
+.align 1
+
+firstLong:.long  a , d, e, f
+e:
+.char 7, 2, 3
+.bss.2
+f:.skip 1
+.end

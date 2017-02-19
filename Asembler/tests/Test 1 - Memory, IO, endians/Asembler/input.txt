@@ -1,0 +1,88 @@
+.public printNum, main
+
+.text.Print
+
+printNum:
+main:ldcal r15, adrWrite
+
+ldcal r13, adr0
+ldral r15, r15, 0
+ldcal r0, 123456
+
+cmpals r0, 0
+
+ldcal r12, printZero
+calleq r12, 0
+
+stral sp, r0, 0, prefixDec
+stral sp, lr, 0, prefixDec
+stral sp, r2, 0, prefixDec
+
+ldcal r12, loop
+callal r12, 0
+
+ldral sp, r2, 0, postfixInc
+ldral sp, lr, 0, postfixInc
+ldral sp, r0, 0, postfixInc
+
+ldcal r12, finish
+calleq r12, 0
+
+
+.text.2
+finish:
+intal 0x0
+
+.text.3
+
+
+loop:
+cmpals r0, 0
+moveq pc, lr
+
+moval r1, r0
+dival r1, 10
+mulal r1, 10
+moval r2, r0
+subal r2, r1
+dival r0, 10
+
+stral sp, r0, 0, prefixDec
+stral sp, lr, 0, prefixDec
+stral sp, r2, 0, prefixDec
+
+ldcal r12, loop
+callal r12, 0
+
+ldral sp, r2, 0, postfixInc
+ldral sp, lr, 0, postfixInc
+ldral sp, r0, 0, postfixInc
+
+
+ldral r13, r3, 0
+addal r2, r3
+
+outal r2, r15
+moval pc, lr
+
+
+
+printZero:
+
+ldral r13, r1, 0
+outal r1, r15
+
+moval pc, lr
+
+
+.data.print
+adr0: .char '0', 0, 0, 0
+adr9: .char '9', 0, 0, 0
+
+
+.data.Memory
+adrRead: .long 0x1000
+adrStaturRead : .long 0x1010
+adrWrite : .long 0x2000
+
+.end

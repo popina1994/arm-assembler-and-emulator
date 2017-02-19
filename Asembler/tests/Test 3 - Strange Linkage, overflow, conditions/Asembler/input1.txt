@@ -1,0 +1,82 @@
+.public printNum
+
+.text.PrintNum
+
+printNum:
+
+ldcal r15, adrWrite
+ldral r15, r15, 0
+
+ldcal r13, adr0
+ldral r13, r13, 0
+
+ldcal r11, maskCarry
+ldral r11, r11, 0
+
+ldcal r1, 32
+
+
+stral sp, lr, 0, prefixDec
+
+ldcal r12, loop
+callal r12, 0
+
+ldral sp, lr, 0, postfixInc
+
+ldcal r0, adrSpace
+ldral r0, r0, 0
+outal r0, r15
+
+moval pc, lr
+
+.text.Loop
+
+loop:
+
+cmpals r1, 0
+moveq pc, lr
+
+subal r1, 1
+shlals r0, r0, 1
+
+stral sp, psw, 0, prefixDec
+ldral sp, r2, 0, postfixInc
+testals r11, r2
+
+ldcal r2, 0
+
+addal r2, r13 
+addne r2, 1
+
+outal r2, r15
+
+
+
+stral sp, lr, 0, prefixDec
+ldcal r12, loop
+callal r12, 0
+ldral sp, lr, 0, postfixInc
+
+moval pc, lr
+
+printZero:
+
+ldral r13, r1, 0
+outal r1, r15
+
+moval pc, lr
+
+
+.data.print
+adr0: .char '0', 0, 0, 0
+adr9: .char '9', 0, 0, 0
+adrSpace : .char 0x20, 0, 0, 0
+
+
+.data.Memory
+adrRead: .long 0x1000
+adrStaturRead : .long 0x1010
+adrWrite : .long 0x2000
+maskCarry : .long 0x1
+
+.end

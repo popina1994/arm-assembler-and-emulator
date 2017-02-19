@@ -1,0 +1,1 @@
+./Asembler input.txt output.txt

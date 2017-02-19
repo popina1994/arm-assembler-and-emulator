@@ -1,0 +1,11 @@
+.= 68
+disp = 4
+.text.1
+.text.2
+
+.= . + disp
+.= align(., 16)
+.text.3
+
+
+

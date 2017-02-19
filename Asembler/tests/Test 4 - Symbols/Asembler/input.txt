@@ -1,0 +1,24 @@
+.public a, main
+.extern d, e, f
+
+.text.1
+main:
+
+
+ldcal r13, firstChar
+ldchal r12, secondChar
+ldclal r1, firstLong
+
+a: intal 0x0
+
+.data.1
+firstChar:
+.char 1
+.align 1
+
+firstLong : .long  a - main, d, e, f, a - main + 4, a, c
+secondChar:
+.char 7, 2, 3
+.bss.1
+c:.skip 1
+.end

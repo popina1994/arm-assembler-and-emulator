@@ -1,0 +1,26 @@
+.extern a, b, c
+.public l   , l1
+.text.1
+addals r0, pc
+addal r0, 0x3
+addals r0, sp
+addals sp, r0
+addals r0, -1
+addals r0, lr
+addals r0, r15
+addals r0, lr
+subals r0, r1
+.data.1
+.char 1
+.align 1
+l : .long l1 - l + d + 3, 3-33
+.long - 3 + 4, 3 + 4 + 5 -0x7
+.long -3+4,-3+4
+.long +3 - 4
+.long - 3 + 4,- 3 + 4
+.word 1, 2, -3, 0x, 07
+l1:
+.char 7, 2, 3
+.bss 
+d:.skip 1
+.end

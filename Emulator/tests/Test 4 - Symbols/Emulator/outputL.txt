@@ -1,0 +1,37 @@
+
+.text.1
+efd00000 efd80000 efc8001e ef100002 
+e0000000 
+.data.1
+01 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 
+00 00 14 00 00 00 10 00 00 00 00 00 00 00 07 02 
+03 
+.bss.1
+
+*******************Symbol table *********************
+            idx           Name        section           type       sectionT           size          value     visibility
+              0        .text.1        .text.1        section          .text             20              0          local
+              1           main        .text.1         global        not_sec             -1              0         global
+              2              a        .text.1         global        not_sec             -1             16         global
+              3        .data.1        .data.1        section          .data             33              0          local
+              4      firstChar        .data.1          local        not_sec             -1              0          local
+              5      firstLong        .data.1          local        not_sec             -1              2          local
+              6     secondChar        .data.1          local        not_sec             -1             30          local
+              7         .bss.1         .bss.1        section           .bss              1              0          local
+              8              c         .bss.1          local        not_sec             -1              0          local
+              9              d          UNDEF        .extern        not_sec             -1             -1         global
+             10              e          UNDEF        .extern        not_sec             -1             -1         global
+             11              f          UNDEF        .extern        not_sec             -1             -1         global
+rel.text.1
+            offset              type               idx       ref section
+                 0           ldclExt                 3           .data.1
+                 4           ldchExt                 3           .data.1
+                 8              ldch                 3           .data.1
+                12              ldcl                 3           .data.1
+rel.data.1
+            offset              type               idx       ref section
+                 6             .long                 9                 d
+                10             .long                10                 e
+                14             .long                11                 f
+                22             .long                 0           .text.1
+                26             .long                 7            .bss.1

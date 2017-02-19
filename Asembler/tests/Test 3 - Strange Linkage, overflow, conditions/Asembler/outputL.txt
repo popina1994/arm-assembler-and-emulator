@@ -1,0 +1,92 @@
+
+.text.Print
+ef00ffff ef08ffff ef200007 ef280000 
+e1004000 efc00000 efc80000 ec600000 
+ef000003 ef080000 ef200004 ef280000 
+e2004000 efc00000 efc80000 ec600000 
+ef000000 ef088000 ef200000 ef288000 
+f1004000 ee04c000 efc00000 efc80000 
+ec600000 ef00ffff ef087fff ef20ffff 
+ef287fff f1004000 ee04c000 efc00000 
+efc80000 ec600000 ef000000 ef088000 
+ef20ffff ef28ffff f1004000 ee04c000 
+efc00000 efc80000 ec600000 ef000005 
+ef080000 ef200003 ef280000 e3004000 
+efc00000 efc80000 ec600000 ef000007 
+ef080000 ef200003 ef280000 e4004000 
+efc00000 efc80000 ec600000 ef0000fe 
+ef080000 ef200001 ef280000 e6008000 
+efc00000 efc80000 ec600000 ef0000fe 
+ef080000 ef200001 ef280000 e7008000 
+efc00000 efc80000 ec600000 ef0000fe 
+ef080000 e8000000 efc00000 efc80000 
+ec600000 ef200010 ef280000 ea100400 
+efc00000 efc80000 ec600000 ef200010 
+ef280000 ef0000ae ef080000 ea100000 
+ea100400 efc00000 efc80000 ec600000 
+ef200010 ef280000 ef0000af ef080000 
+ed020000 ed028000 efc00000 efc80000 
+ec600000 ef00ffff ef087fff ef20ffff 
+ef287fff f1004000 efc00000 efc80000 
+ec600000 efc00000 efc80000 ec600000 
+
+.text.ExitCode
+e0000000 
+.data.MemTest
+00 10 00 00 10 10 00 00 00 20 00 00 01 00 00 00 
+05 00 00 00 
+*******************Symbol table *********************
+            idx           Name        section           type       sectionT           size          value     visibility
+              0    .text.Print    .text.Print        section          .text            464              0          local
+              1           main    .text.Print         global        not_sec             -1              0         global
+              2 .text.ExitCode .text.ExitCode        section          .text              4              0          local
+              3         finish .text.ExitCode          local        not_sec             -1              0          local
+              4  .data.MemTest  .data.MemTest        section          .data             20              0          local
+              5        adrRead  .data.MemTest          local        not_sec             -1              0          local
+              6  adrStaturRead  .data.MemTest          local        not_sec             -1              4          local
+              7       adrWrite  .data.MemTest          local        not_sec             -1              8          local
+              8      maskCarry  .data.MemTest          local        not_sec             -1             12          local
+              9      storeAddr  .data.MemTest          local        not_sec             -1             16          local
+             10       printNum          UNDEF        .extern        not_sec             -1             -1         global
+rel.text.Print
+            offset              type               idx       ref section
+                20           ldclExt                10          printNum
+                24           ldchExt                10          printNum
+                52           ldclExt                10          printNum
+                56           ldchExt                10          printNum
+                88           ldclExt                10          printNum
+                92           ldchExt                10          printNum
+               124           ldclExt                10          printNum
+               128           ldchExt                10          printNum
+               160           ldclExt                10          printNum
+               164           ldchExt                10          printNum
+               192           ldclExt                10          printNum
+               196           ldchExt                10          printNum
+               224           ldclExt                10          printNum
+               228           ldchExt                10          printNum
+               256           ldclExt                10          printNum
+               260           ldchExt                10          printNum
+               288           ldclExt                10          printNum
+               292           ldchExt                10          printNum
+               312           ldclExt                10          printNum
+               316           ldchExt                10          printNum
+               324           ldclExt                 4     .data.MemTest
+               328           ldchExt                 4     .data.MemTest
+               336           ldclExt                10          printNum
+               340           ldchExt                10          printNum
+               348           ldclExt                 4     .data.MemTest
+               352           ldchExt                 4     .data.MemTest
+               372           ldclExt                10          printNum
+               376           ldchExt                10          printNum
+               384           ldclExt                 4     .data.MemTest
+               388           ldchExt                 4     .data.MemTest
+               408           ldclExt                10          printNum
+               412           ldchExt                10          printNum
+               440           ldclExt                10          printNum
+               444           ldchExt                10          printNum
+               452           ldclExt                 2    .text.ExitCode
+               456           ldchExt                 2    .text.ExitCode
+rel.text.ExitCode
+            offset              type               idx       ref section
+rel.data.MemTest
+            offset              type               idx       ref section

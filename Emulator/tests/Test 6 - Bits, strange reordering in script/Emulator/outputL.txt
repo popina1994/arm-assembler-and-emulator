@@ -1,0 +1,99 @@
+
+.text.Print
+eff00008 eff80000 ea7bc400 efd00000 
+efd80000 ea6b4400 efb0000c efb80000 
+ea5ac400 ef00ab98 ef08fedc ef100020 
+ef180000 efc00000 efc80000 ec600000 
+ef00ab98 ef08fedc ef100020 ef180000 
+efc00000 efc80000 ec600000 ef000000 
+ef080000 ef100020 ef180000 efc00000 
+efc80000 ec600000 ef000000 ef080000 
+ef100020 ef180000 efc00000 efc80000 
+ec600000 ef000000 ef080000 ef100020 
+ef180000 efc00000 efc80000 ec600000 
+ef000000 ef080000 ef100020 ef180000 
+efc00000 efc80000 ec600000 efc00000 
+efc80000 ec600000 
+.text.2
+e0000000 
+.text.3
+f50c0000 0e844000 e20c0001 fe000200 
+ea94e800 ea909400 f9588000 ef200000 
+ef280000 e111a000 21140001 ea90a800 
+ea946800 ec600000 ea945400 ea909400 
+ed2f0000 ee844000 
+.text.4
+f50c0000 0e844000 e20c0001 fe000300 
+ea94e800 ea909400 f9588000 ef200000 
+ef280000 e111a000 21140001 ed2f0000 
+ea946800 efc00000 efc80000 ec600000 
+ea945400 ee844000 ea684400 ed1f0000 
+ee844000 
+.data.print
+30 00 00 00 39 00 00 00 
+.data.Memory
+00 10 00 00 10 10 00 00 00 20 00 00 01 00 00 00 
+
+*******************Symbol table *********************
+            idx           Name        section           type       sectionT           size          value     visibility
+              0    .text.Print    .text.Print        section          .text            216              0          local
+              1       printNum    .text.Print         global        not_sec             -1              0         global
+              2           main    .text.Print         global        not_sec             -1              0         global
+              3        .text.2        .text.2        section          .text              4              0          local
+              4         finish        .text.2          local        not_sec             -1              0          local
+              5        .text.3        .text.3        section          .text             72              0          local
+              6           loop        .text.3          local        not_sec             -1              0          local
+              7        .text.4        .text.4        section          .text             84              0          local
+              8       loopLeft        .text.4          local        not_sec             -1              0          local
+              9      printZero        .text.4          local        not_sec             -1             72          local
+             10    .data.print    .data.print        section          .data              8              0          local
+             11           adr0    .data.print          local        not_sec             -1              0          local
+             12           adr9    .data.print          local        not_sec             -1              4          local
+             13   .data.Memory   .data.Memory        section          .data             16              0          local
+             14        adrRead   .data.Memory          local        not_sec             -1              0          local
+             15  adrStaturRead   .data.Memory          local        not_sec             -1              4          local
+             16       adrWrite   .data.Memory          local        not_sec             -1              8          local
+             17      maskCarry   .data.Memory          local        not_sec             -1             12          local
+             18           disp          UNDEF        .extern        not_sec             -1             -1         global
+rel.text.Print
+            offset              type               idx       ref section
+                 0           ldclExt                13      .data.Memory
+                 4           ldchExt                13      .data.Memory
+                12           ldclExt                10       .data.print
+                16           ldchExt                10       .data.print
+                24           ldclExt                13      .data.Memory
+                28           ldchExt                13      .data.Memory
+                52           ldclExt                 5           .text.3
+                56           ldchExt                 5           .text.3
+                80           ldclExt                 7           .text.4
+                84           ldchExt                 7           .text.4
+                92           ldclExt                 3           .text.2
+                96           ldchExt                 3           .text.2
+               108           ldclExt                 7           .text.4
+               112           ldchExt                 7           .text.4
+               120           ldclExt                10       .data.print
+               124           ldchExt                10       .data.print
+               136           ldclExt                 7           .text.4
+               140           ldchExt                 7           .text.4
+               148           ldclExt                18              disp
+               152           ldchExt                18              disp
+               164           ldclExt                 7           .text.4
+               168           ldchExt                 7           .text.4
+               176           ldclExt                 0       .text.Print
+               180           ldchExt                 0       .text.Print
+               192           ldclExt                 7           .text.4
+               196           ldchExt                 7           .text.4
+               204           ldclExt                 3           .text.2
+               208           ldchExt                 3           .text.2
+rel.text.2
+            offset              type               idx       ref section
+rel.text.3
+            offset              type               idx       ref section
+rel.text.4
+            offset              type               idx       ref section
+                52           ldclExt                 7           .text.4
+                56           ldchExt                 7           .text.4
+rel.data.print
+            offset              type               idx       ref section
+rel.data.Memory
+            offset              type               idx       ref section

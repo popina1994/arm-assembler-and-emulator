@@ -1,0 +1,12 @@
+sudo apt-get upgrade
+sudo apt-get install g++
+sudo apt-get install dos2unix
+
+Build za Asembler:
+
+g++ -o Assembler Assembler.cpp AssemblingError.cpp Main.cpp RellocationTable.cpp RellocationTableEntry.cpp SymbolTable.cpp SymbolTableEntry.cpp Tokenizer.cpp 
+
+
+Build za Emulator:
+g++ -std=c++0x -o Emulator CPU.cpp Emulator.cpp IVT.cpp Main.cpp Memory.cpp RellocationTable.cpp RellocationTableEntry.cpp Section.cpp SymbolTable.cpp SymbolTableEntry.cpp Tokenizer.cpp -pthread
+

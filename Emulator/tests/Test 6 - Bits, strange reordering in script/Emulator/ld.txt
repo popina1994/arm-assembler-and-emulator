@@ -1,0 +1,21 @@
+.= 68
+
+.= align(., 16)
+.text.2
+
+.data.print
+
+.data.Memory
+
+.text.Print
+
+.text.3
+disp = 4
+z = main
+
+.= . + disp
+.= align(., 16)
+
+
+
+
